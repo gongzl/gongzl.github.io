@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Mr.Gong
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="miccall" />
+    
+    	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/1.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+</head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">My Blog</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Algorithm/">Algorithm</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="简历">
+		                简历
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="团队">
+		                团队
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="图库">
+		                图库
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+		            
+		                <li><a href="https://github.com/gongzl" class="icon fa-github"><span class="label">GitHub</span></a></li>
+		            
+		            
+		            
+		            
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://xxxxxxxxxx.png);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Python爬去图片零基础教程</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h2 id="一、爬虫环境"><a href="#一、爬虫环境" class="headerlink" title="一、爬虫环境"></a><strong>一、爬虫环境</strong></h2><h4 id="1-python版本：python-3"><a href="#1-python版本：python-3" class="headerlink" title="    1.python版本：python 3"></a><strong>   </strong> 1.python版本：python 3</h4><pre><code>2.anaconda
+3.requests模块
+</code></pre><h4 id="4-PyCharm编辑器"><a href="#4-PyCharm编辑器" class="headerlink" title="4. PyCharm编辑器"></a>4. PyCharm编辑器</h4><h2 id="二、安装环境"><a href="#二、安装环境" class="headerlink" title="二、安装环境"></a><strong>二、安装环境</strong></h2><h4 id="1-安装anaconda"><a href="#1-安装anaconda" class="headerlink" title="    1.安装anaconda"></a><strong>   </strong> 1.安装anaconda</h4><pre><code>在anaconda官网https://www.anaconda.com/进行下载（如果看不懂英文可以用谷歌浏览器或者QQ浏览器打开）
+
+选择下载python3.6版本（根据自己电脑系统下载32位或64位）进行安装。
+</code></pre><h4 id="2-用anaconda安装requests模块"><a href="#2-用anaconda安装requests模块" class="headerlink" title="     2.用anaconda安装requests模块"></a><strong>    </strong> 2.用anaconda安装requests模块</h4><pre><code>以管理员身份运行anaconda（我也不知道为什么要用管理员身份运行，好像是以为之前安装别的东西没用管理员运行总
+
+是安装出错）
+
+不管了，就用管理员安装。在anaconda中输入：conda install requests 进行安装
+
+由于我安装过了就不安装了，输入：y 就会继续安装了。安装完成可以输入：conda list 查看
+
+在其中就可以找到requests，requests安装完成。
+</code></pre><h4 id="3-安装PyCharm编辑器"><a href="#3-安装PyCharm编辑器" class="headerlink" title="    3.安装PyCharm编辑器"></a><strong>   </strong> 3.安装PyCharm编辑器</h4><pre><code>在https://www.jetbrains.com/pycharm/中进行下载并安装。在安装完PyCharm后一定要记得配置，如果电脑中有多
+
+个python版本一定要配置为你安装的anaconda路径中的python.exe,否则安装的requests模块会导入不了。
+</code></pre><h4 id="4-PyCharm的配置"><a href="#4-PyCharm的配置" class="headerlink" title="4.PyCharm的配置"></a>4.PyCharm的配置</h4><pre><code>打开PyCharm 点File -&amp;gt; settings
+
+按截图点击进入
+
+进入此页面后点击Proje:Python -&amp;gt;Project Interpreter在右边选择anaconda安装路径中的Python.exe,
+
+再点击右下角OKPyCharm配置完成。
+</code></pre><h2 id="三、代码部分"><a href="#三、代码部分" class="headerlink" title="三、代码部分"></a><strong>三、代码部分</strong></h2><pre><code>1.requests模块的使用
+
+    用requests模块向网页发送get请求，在此之前先介绍一下今天要爬取的网站&amp;quot;http://unsplash.com
+</code></pre><p>import requests #导入requests库</p>
+<p>headers = {&#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&#39;}  #给请求指定一个请求头来模拟chrome浏览器</p>
+<p>res = requests.get(&#39;<a href="https://unsplash.com&#39;" target="_blank" rel="noopener">https://unsplash.com&#39;</a>) #像目标url地址发送get请求，返回一个response对象</p>
+<p>print(res.text) #r.text是http response的网页HTML</p>
+<pre><code>    这样就可以输出网页源代码，输出结果为
+
+    第一步完成，有没有一丝丝成就感？
+
+2.分析网页源代码
+
+    在浏览器中打开http://unsplash.com网站按F12再点图中的选择元素（建议用谷歌浏览器，我发现IE浏览
+
+    器查找到的元素对应源码和PyCharm获取到的有一些差别）
+
+    再在网页中点击一张图片
+
+    点击后此元素的源码部分就找到了，这个图片的网络地址就是下图中蓝色的部分
+
+    你可以对比多个图片元素的网络地址，接下来考虑考虑怎么用python代码把这些网络地址一一摘出来。
+
+3.用正则表达式摘出图片网络地址
+
+    写到此处我突然发现很难受，这个网页的源代码和我前几天写的时候有一点变动我之前写的正则表达式不
+
+    能用了，下来就说说正则表达式的用法吧，你在学习的时候再临时分析正好加深学习。
+
+    先找几个元素代码对比一下
+</code></pre><p>&lt;img itemprop=&quot;thumbnailUrl&quot; data-test=&quot;standard-photo-grid-multi-col-img&quot; sizes=&quot;(min-width: 1335px) 416px,(min-width: 992px) calc(calc(100vw - 72px) / 3), (min-width: 768px) calc(calc(100vw - 48px) / 2), 100vw&quot; srcset=&quot;<a href="https://images.unsplash.com/photo-1521780372272-bb5e0f455dcf?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=ca8871f351fa47ea3f969912a157b235&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=60" target="_blank" rel="noopener">https://images.unsplash.com/photo-1521780372272-bb5e0f455dcf?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=ca8871f351fa47ea3f969912a157b235&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=60</a> 100w,</p>
+<p>&lt;img itemprop=&quot;thumbnailUrl&quot; data-test=&quot;standard-photo-grid-multi-col-img&quot; sizes=&quot;(min-width: 1335px) 416px, (min-width: 992px) calc(calc(100vw - 72px) / 3), (min-width: 768px) calc(calc(100vw - 48px) / 2), 100vw&quot; srcset=&quot;<a href="https://images.unsplash.com/photo-1523768817242-39ab4249a6d5?ixlib=rb-0.3.5&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;s=14e85dfb408586029279636308bca290&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=100&amp;amp;q=60" target="_blank" rel="noopener">https://images.unsplash.com/photo-1523768817242-39ab4249a6d5?ixlib=rb-0.3.5&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;s=14e85dfb408586029279636308bca290&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=100&amp;amp;q=60</a> 100w,</p>
+<p>&lt;img itemprop=&quot;thumbnailUrl&quot; alt=&quot;Walt Disney Concert Hall at dusk&quot; data-test=&quot;standard-photo-grid-multi-col-img&quot; sizes=&quot;(min-width: 1335px) 416px, (min-width: 992px) calc(calc(100vw - 72px) / 3), (min-width: 768px) calc(calc(100vw - 48px) / 2), 100vw&quot; srcset=&quot;<a href="https://images.unsplash.com/photo-1496277397776-ca8089ecc5b7?ixlib=rb-0.3.5&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;s=8788c40854a2dece7b70927c31806802&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=100&amp;amp;q=60" target="_blank" rel="noopener">https://images.unsplash.com/photo-1496277397776-ca8089ecc5b7?ixlib=rb-0.3.5&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;s=8788c40854a2dece7b70927c31806802&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=100&amp;amp;q=60</a> 100w,</p>
+<pre><code>这些就是我们需要的部分html代码，怎么用正则表达式从所有html源码中获取这些片段呢
+</code></pre><p>chapter_photo_list=re.findall(r&#39;&lt;img itemprop=&quot;thumbnailUrl&quot;.*?100w,&#39;,html)</p>
+<pre><code> 从图中可以看出就这一句正则表达式就可以摘出这些片段下来解释解释正则表达式。
+
+ 上面那句正则表达式中单引号里带下划线的就是我们要补充的，后面的html就对应的是上面的网页源代码。
+
+这句中的 .\*? 你可以理解为此处略去n个字，这句正则表达式的意思就是在html中匹配出所有以&amp;#39;&amp;lt;img         itemprop=&amp;quot;thumbnilUrl&amp;quot;&amp;#39;开头以 &amp;#39;100w&amp;#39; 结尾的片段。
+
+ 事实上现在获取到的片段有一部分是多余的，我们真正需要的只有 srcset=&amp;quot;后面的Url 也就是上图中蓝色
+
+ 的链接。
+
+ 下来更改正则表达式
+</code></pre><p>chapter_photo_list=re.findall(r&#39;&lt;img itemprop=&quot;thumbnailUrl&quot;.*?srcset=&quot;(.*?)100w,&#39;,html)</p>
+<pre><code>看看运行结果
+
+成功了现在只剩下图片地址了。和之前的正则表达式比较比较有什么不同？
+
+中间多了 srcset=&amp;quot;(.\*?) 大家需要了解的就是（.\*?）它就代表获取 srcset=&amp;quot;与  100w之间的部分
+
+有人会想为什么不直接写
+</code></pre><p>chapter_photo_list=re.findall(r&#39;srcset=&quot;(.*?)100w,&#39;,html)</p>
+<pre><code>而要写成那样？
+
+因为这个网页源代码中不是只有图片Url的时候才有，如果你那样写会获取到好多没有的，所以前面那部
+
+分必须有它起到了定位的作用。
+
+在这里再展示一下以上代码
+</code></pre><p>import requests #导入requests库</p>
+<p>import re #写正则表达式要导入的</p>
+<p>headers = {&#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&#39;}  #给请求指定一个请求头来模拟chrome浏览器</p>
+<p>res = requests.get(&#39;<a href="https://unsplash.com&#39;" target="_blank" rel="noopener">https://unsplash.com&#39;</a>) #像目标url地址发送get请求，返回一个response对象</p>
+<p>print(res.text) #r.text是http response的网页HTML</p>
+<p>res.encoding=&#39;utf-8&#39; #把获取到的源代码格式改为utf-8，避免汉子乱码</p>
+<p>html=res.text</p>
+<p>chapter_photo_list=re.findall(r&#39;&lt;img itemprop=&quot;thumbnailUrl&quot;.*?srcset=&quot;(.*?)100w,&#39;,html)</p>
+<p>print(chapter_photo_list)</p>
+<pre><code>4.创建文件夹并切换路径
+</code></pre><p>os.mkdir(&#39;D:\BeautifulPicture&#39;)  #创建文件夹</p>
+<p>os.chdir(&#39;D:\BeautifulPicture&#39;)   #切换路径至上面创建的文件夹</p>
+<pre><code>    在写这两句代码之前要先导入os，就是在开头写import os 你也可以在下面的代码中看到。
+
+5.下载图片
+</code></pre><p>for chapter_photo in chapter_photo_list:  #从图片列表中循环取出每一个图片网络地址</p>
+<pre><code>print(chapter\_photo)
+
+url=chapter\_photo
+
+name=re.findall(r&amp;#39;photo-(.\*?)-&amp;#39;,chapter\_photo)[0] #用正则表达式在网络地址中匹配出一段作为jpg文件的命名
+
+print(name)
+
+img = requests.get(url)
+
+file\_name = name + &amp;#39;.jpg&amp;#39;
+
+print(&amp;#39;开始保存图片&amp;#39;)
+
+f = open(file\_name, &amp;#39;ab&amp;#39;)
+
+f.write(img.content)
+
+print(file\_name, &amp;#39;图片保存成功！&amp;#39;)
+
+f.close()
+
+    有没有发现这里的正则表达式又有不同?
+
+    这里的正则表达式后面多了一个 [0] ,这样就是为了避免它匹配符合条件的所有，[0]就是匹配到符合要求
+
+    的第一部分，[1]就是符合要求的第二部分，以此类推就像数组一样。
+
+6.完整代码
+</code></pre><p>import requests #导入requests库</p>
+<p>import re #写正则表达式要导入的</p>
+<p>import os</p>
+<p>headers = {&#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&#39;}  #给请求指定一个请求头来模拟chrome浏览器</p>
+<p>res = requests.get(&#39;<a href="https://unsplash.com&#39;" target="_blank" rel="noopener">https://unsplash.com&#39;</a>) #像目标url地址发送get请求，返回一个response对象</p>
+<p>print(res.text) #r.text是http response的网页HTML</p>
+<p>res.encoding=&#39;utf-8&#39; #把获取到的源代码格式改为utf-8，避免汉子乱码</p>
+<p>html=res.text</p>
+<p>chapter_photo_list=re.findall(r&#39;&lt;img itemprop=&quot;thumbnailUrl&quot;.*?srcset=&quot;(.*?)100w,&#39;,html)</p>
+<p>print(chapter_photo_list)</p>
+<p>#os.mkdir(&#39;D:\BeautifulPicture&#39;)  #创建文件夹</p>
+<p>os.chdir(&#39;D:\BeautifulPicture&#39;)   #切换路径至上面创建的文件夹</p>
+<p>for chapter_photo in chapter_photo_list:</p>
+<pre><code>print(chapter\_photo)
+
+url=chapter\_photo
+
+name=re.findall(r&amp;#39;photo-(.\*?)-&amp;#39;,chapter\_photo)[0]
+
+print(name)
+
+img = requests.get(url)
+
+file\_name = name + &amp;#39;.jpg&amp;#39;
+
+print(&amp;#39;开始保存图片&amp;#39;)
+
+f = open(file\_name, &amp;#39;ab&amp;#39;)
+
+f.write(img.content)
+
+print(file\_name, &amp;#39;图片保存成功！&amp;#39;)
+
+f.close()
+
+    应注意创建文件夹时应注意是否存在此文件夹，如果此文件夹存在应注释掉对应语句或删除文件夹或改创
+
+    建路径。
+
+    看看运行结果
+
+
+
+    运行完你会发现只有十张图片，这是因为这个网站是下拉式的它没有页数。如果感兴趣可以继续学习怎么
+
+    用代码实现下拉动作，或找有页数的图片网下载全网图片。谢谢观看！
+</code></pre>
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2018/05/24/Python爬取图片零基础/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2018/05/24/Python爬取图片零基础/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+            	<span id="busuanzi_container_site_pv">2018总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
