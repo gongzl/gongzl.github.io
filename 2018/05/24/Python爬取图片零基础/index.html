@@ -24,7 +24,7 @@
           content: ' ';
           position: fixed;
           top: 0;
-          background: url('/img/1.jpg') center 0 no-repeat;
+          background: url('//img/1.jpg') center 0 no-repeat;
           right: 0;
           bottom: 0;
           left: 0;
@@ -144,189 +144,145 @@
 </nav>
 
         <div id="main" >
-            <div class ="post_page_title_img" style="height: 25rem;background-image: url(imges/python/jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(python爬取图片零基础/python.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
                 <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Python爬去图片零基础教程</h2></a>
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <h2 id="一、爬虫环境"><a href="#一、爬虫环境" class="headerlink" title="一、爬虫环境"></a><strong>一、爬虫环境</strong></h2><h4 id="1-python版本：python-3"><a href="#1-python版本：python-3" class="headerlink" title="    1.python版本：python 3"></a><strong>   </strong> 1.python版本：python 3</h4><pre><code>2.anaconda
-3.requests模块
-</code></pre><h4 id="4-PyCharm编辑器"><a href="#4-PyCharm编辑器" class="headerlink" title="4. PyCharm编辑器"></a>4. PyCharm编辑器</h4><h2 id="二、安装环境"><a href="#二、安装环境" class="headerlink" title="二、安装环境"></a><strong>二、安装环境</strong></h2><h4 id="1-安装anaconda"><a href="#1-安装anaconda" class="headerlink" title="    1.安装anaconda"></a><strong>   </strong> 1.安装anaconda</h4><pre><code>在anaconda官网https://www.anaconda.com/进行下载（如果看不懂英文可以用谷歌浏览器或者QQ浏览器打开）
+                <h2 id="一、爬虫环境"><a href="#一、爬虫环境" class="headerlink" title="一、爬虫环境"></a><strong>一、爬虫环境</strong></h2><h4 id="1-python版本：python-3"><a href="#1-python版本：python-3" class="headerlink" title="1.python版本：python 3"></a>1.python版本：python 3</h4><h4 id="2-anaconda"><a href="#2-anaconda" class="headerlink" title="2.anaconda"></a>2.anaconda</h4><h4 id="3-requests模块"><a href="#3-requests模块" class="headerlink" title="3.requests模块"></a>3.requests模块</h4><h4 id="4-PyCharm编辑器"><a href="#4-PyCharm编辑器" class="headerlink" title="4. PyCharm编辑器"></a>4. PyCharm编辑器</h4><h2 id="二、安装环境"><a href="#二、安装环境" class="headerlink" title="二、安装环境"></a><strong>二、安装环境</strong></h2><h4 id="1-安装anaconda"><a href="#1-安装anaconda" class="headerlink" title="1.安装anaconda"></a>1.安装anaconda</h4><blockquote>
+<p>在anaconda官网<a href="https://www.anaconda.com/进行下载（如果看不懂英文可以用谷歌浏览器或者QQ浏览器打开）" target="_blank" rel="noopener">https://www.anaconda.com/进行下载（如果看不懂英文可以用谷歌浏览器或者QQ浏览器打开）</a></p>
+</blockquote>
+<blockquote>
+<p>选择下载python3.6版本（根据自己电脑系统下载32位或64位）进行安装。</p>
+</blockquote>
+<h4 id="2-用anaconda安装requests模块"><a href="#2-用anaconda安装requests模块" class="headerlink" title="2.用anaconda安装requests模块"></a>2.用anaconda安装requests模块</h4><blockquote>
+<p>以管理员身份运行anaconda（我也不知道为什么要用管理员身份运行，好像是以为之前安装别的东西没用管理员运行总是安装出错）</p>
+</blockquote>
+<blockquote>
+<p>不管了，就用管理员安装。在anaconda中输入：conda install requests 进行安装</p>
+</blockquote>
+<blockquote>
+<p>由于我安装过了就不安装了，输入：y 就会继续安装了。安装完成可以输入：conda list 查看</p>
+</blockquote>
+<blockquote>
+<p>在其中就可以找到requests，requests安装完成。</p>
+</blockquote>
+<h4 id="3-安装PyCharm编辑器"><a href="#3-安装PyCharm编辑器" class="headerlink" title="3.安装PyCharm编辑器"></a>3.安装PyCharm编辑器</h4><blockquote>
+<p>在<a href="https://www.jetbrains.com/pycharm/中进行下载并安装。在安装完PyCharm后一定要记得配置，如果电脑中有多个python版本一定要配置为你安装的anaconda路径中的python.exe,否则安装的requests模块会导入不了。" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/中进行下载并安装。在安装完PyCharm后一定要记得配置，如果电脑中有多个python版本一定要配置为你安装的anaconda路径中的python.exe,否则安装的requests模块会导入不了。</a></p>
+</blockquote>
+<h4 id="4-PyCharm的配置"><a href="#4-PyCharm的配置" class="headerlink" title="4.PyCharm的配置"></a>4.PyCharm的配置</h4><blockquote>
+<p>打开PyCharm 点File -&gt; settings</p>
+</blockquote>
+<blockquote>
+<p>按截图点击进入</p>
+</blockquote>
+<blockquote>
+<p>进入此页面后点击Proje:Python -&gt;Project Interpreter在右边选择anaconda安装路径中的Python.exe,</p>
+</blockquote>
+<blockquote>
+<p>再点击右下角OKPyCharm配置完成。</p>
+</blockquote>
+<h2 id="三、代码部分"><a href="#三、代码部分" class="headerlink" title="三、代码部分**"></a>三、代码部分**</h2><h4 id="1-requests模块的使用"><a href="#1-requests模块的使用" class="headerlink" title="1.requests模块的使用"></a>1.requests模块的使用</h4><blockquote>
+<p>用requests模块向网页发送get请求，在此之前先介绍一下今天要爬取的网站&quot;<a href="http://unsplash.com" target="_blank" rel="noopener">http://unsplash.com</a></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">import requests #导入requests库</span><br><span class="line">headers = &#123;&amp;#39;User-Agent&amp;#39;: &amp;#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&amp;#39;&#125;  #给请求指定一个请求头来模拟chrome浏览器</span><br><span class="line">res = requests.get(&amp;#39;https://unsplash.com&amp;#39;) #像目标url地址发送get请求，返回一个response对象</span><br><span class="line">print(res.text) #r.text是http response的网页HTML</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这样就可以输出网页源代码，输出结果为</p>
+</blockquote>
+<blockquote>
+<p>第一步完成，有没有一丝丝成就感？</p>
+</blockquote>
+<h4 id="2-分析网页源代码"><a href="#2-分析网页源代码" class="headerlink" title="2.分析网页源代码"></a>2.分析网页源代码</h4><blockquote>
+<p>在浏览器中打开<a href="http://unsplash.com网站按F12再点图中的选择元素（建议用谷歌浏览器，我发现IE浏览" target="_blank" rel="noopener">http://unsplash.com网站按F12再点图中的选择元素（建议用谷歌浏览器，我发现IE浏览</a></p>
+</blockquote>
+<blockquote>
+<p>器查找到的元素对应源码和PyCharm获取到的有一些差别）</p>
+</blockquote>
+<blockquote>
+<p>再在网页中点击一张图片</p>
+</blockquote>
+<blockquote>
+<p>点击后此元素的源码部分就找到了，这个图片的网络地址就是下图中蓝色的部分</p>
+</blockquote>
+<blockquote>
+<p>你可以对比多个图片元素的网络地址，接下来考虑考虑怎么用python代码把这些网络地址一一摘出来。</p>
+</blockquote>
+<h4 id="3-用正则表达式摘出图片网络地址"><a href="#3-用正则表达式摘出图片网络地址" class="headerlink" title="3.用正则表达式摘出图片网络地址"></a>3.用正则表达式摘出图片网络地址</h4><blockquote>
+<p>写到此处我突然发现很难受，这个网页的源代码和我前几天写的时候有一点变动我之前写的正则表达式不</p>
+</blockquote>
+<blockquote>
+<p>能用了，下来就说说正则表达式的用法吧，你在学习的时候再临时分析正好加深学习。</p>
+</blockquote>
+<blockquote>
+<p>先找几个元素代码对比一下</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&amp;lt;img itemprop=&amp;quot;thumbnailUrl&amp;quot; data-test=&amp;quot;standard-photo-grid-multi-col-img&amp;quot; sizes=&amp;quot;(min-width: 1335px) 416px,(min-width: 992px) calc(calc(100vw - 72px) / 3), (min-width: 768px) calc(calc(100vw - 48px) / 2), 100vw&amp;quot; srcset=&amp;quot;https://images.unsplash.com/photo-1521780372272-bb5e0f455dcf?ixlib=rb-0.3.5&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;s=ca8871f351fa47ea3f969912a157b235&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=100&amp;amp;q=60 100w,</span><br><span class="line"></span><br><span class="line">&amp;lt;img itemprop=&amp;quot;thumbnailUrl&amp;quot; data-test=&amp;quot;standard-photo-grid-multi-col-img&amp;quot; sizes=&amp;quot;(min-width: 1335px) 416px, (min-width: 992px) calc(calc(100vw - 72px) / 3), (min-width: 768px) calc(calc(100vw - 48px) / 2), 100vw&amp;quot; srcset=&amp;quot;https://images.unsplash.com/photo-1523768817242-39ab4249a6d5?ixlib=rb-0.3.5&amp;amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;amp;s=14e85dfb408586029279636308bca290&amp;amp;amp;auto=format&amp;amp;amp;fit=crop&amp;amp;amp;w=100&amp;amp;amp;q=60 100w,</span><br><span class="line"></span><br><span class="line">&amp;lt;img itemprop=&amp;quot;thumbnailUrl&amp;quot; alt=&amp;quot;Walt Disney Concert Hall at dusk&amp;quot; data-test=&amp;quot;standard-photo-grid-multi-col-img&amp;quot; sizes=&amp;quot;(min-width: 1335px) 416px, (min-width: 992px) calc(calc(100vw - 72px) / 3), (min-width: 768px) calc(calc(100vw - 48px) / 2), 100vw&amp;quot; srcset=&amp;quot;https://images.unsplash.com/photo-1496277397776-ca8089ecc5b7?ixlib=rb-0.3.5&amp;amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;amp;s=8788c40854a2dece7b70927c31806802&amp;amp;amp;auto=format&amp;amp;amp;fit=crop&amp;amp;amp;w=100&amp;amp;amp;q=60 100w,</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>这些就是我们需要的部分html代码，怎么用正则表达式从所有html源码中获取这些片段呢</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chapter\_photo\_list=re.findall(r&amp;#39;&amp;lt;img itemprop=&amp;quot;thumbnailUrl&amp;quot;.\*?100w,&amp;#39;,html)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>从图中可以看出就这一句正则表达式就可以摘出这些片段下来解释解释正则表达式。</p>
+</blockquote>
+<blockquote>
+<p>上面那句正则表达式中单引号里带下划线的就是我们要补充的，后面的html就对应的是上面的网页源代码。</p>
+</blockquote>
+<blockquote>
+<p>这句中的 .*? 你可以理解为此处略去n个字，这句正则表达式的意思就是在html中匹配出所有以&#39;&lt;imgitemprop=&quot;thumbnilUrl&quot;&#39;开头以 &#39;100w&#39; 结尾的片段。</p>
+</blockquote>
+<blockquote>
+<p>事实上现在获取到的片段有一部分是多余的，我们真正需要的只有 srcset=&quot;后面的Url 也就是上图中蓝色的链接。</p>
+</blockquote>
+<blockquote>
+<p>下来更改正则表达式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chapter\_photo\_list=re.findall(r&amp;#39;&amp;lt;img itemprop=&amp;quot;thumbnailUrl&amp;quot;.\*?srcset=&amp;quot;(.\*?)100w,&amp;#39;,html)</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>看看运行结果</p>
+</blockquote>
+<blockquote>
+<p>成功了现在只剩下图片地址了。和之前的正则表达式比较比较有什么不同？</p>
+</blockquote>
+<blockquote>
+<p>中间多了 srcset=&quot;(.*?) 大家需要了解的就是（.*?）它就代表获取 srcset=&quot;与  100w之间的部分</p>
+</blockquote>
+<blockquote>
+<p>有人会想为什么不直接写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chapter\_photo\_list=re.findall(r&amp;#39;srcset=&amp;quot;(.\*?)100w,&amp;#39;,html)</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<blockquote>
+<p>而要写成那样？</p>
+</blockquote>
+<blockquote>
+<p>因为这个网页源代码中不是只有图片Url的时候才有，如果你那样写会获取到好多没有的，所以前面那部</p>
+</blockquote>
+<blockquote>
+<p>分必须有它起到了定位的作用。</p>
+</blockquote>
+<blockquote>
+<p>在这里再展示一下以上代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">import requests #导入requests库</span><br><span class="line"></span><br><span class="line">import re #写正则表达式要导入的</span><br><span class="line"></span><br><span class="line">headers = &#123;&amp;#39;User-Agent&amp;#39;: &amp;#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&amp;#39;&#125;  #给请求指定一个请求头来模拟chrome浏览器</span><br><span class="line"></span><br><span class="line">res = requests.get(&amp;#39;https://unsplash.com&amp;#39;) #像目标url地址发送get请求，返回一个response对象</span><br><span class="line"></span><br><span class="line">print(res.text) #r.text是http response的网页HTML</span><br><span class="line"></span><br><span class="line">res.encoding=&amp;#39;utf-8&amp;#39; #把获取到的源代码格式改为utf-8，避免汉子乱码</span><br><span class="line"></span><br><span class="line">html=res.text</span><br><span class="line"></span><br><span class="line">chapter\_photo\_list=re.findall(r&amp;#39;&amp;lt;img itemprop=&amp;quot;thumbnailUrl&amp;quot;.\*?srcset=&amp;quot;(.\*?)100w,&amp;#39;,html)</span><br><span class="line"></span><br><span class="line">print(chapter\_photo\_list)</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h4 id="4-创建文件夹并切换路径"><a href="#4-创建文件夹并切换路径" class="headerlink" title="4.创建文件夹并切换路径"></a>4.创建文件夹并切换路径</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">os.mkdir(&amp;#39;D:\BeautifulPicture&amp;#39;)  #创建文件夹</span><br><span class="line"></span><br><span class="line">os.chdir(&amp;#39;D:\BeautifulPicture&amp;#39;)   #切换路径至上面创建的文件夹</span><br></pre></td></tr></table></figure>
+<pre><code>在写这两句代码之前要先导入os，就是在开头写import os 你也可以在下面的代码中看到。
+</code></pre><h4 id="5-下载图片"><a href="#5-下载图片" class="headerlink" title="5.下载图片"></a>5.下载图片</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">for chapter\_photo in chapter\_photo\_list:  #从图片列表中循环取出每一个图片网络地址</span><br><span class="line"></span><br><span class="line">    print(chapter\_photo)</span><br><span class="line"></span><br><span class="line">    url=chapter\_photo</span><br><span class="line"></span><br><span class="line">    name=re.findall(r&amp;#39;photo-(.\*?)-&amp;#39;,chapter\_photo)[0] #用正则表达式在网络地址中匹配出一段作为jpg文件的命名</span><br><span class="line"></span><br><span class="line">    print(name)</span><br><span class="line"></span><br><span class="line">    img = requests.get(url)</span><br><span class="line"></span><br><span class="line">    file\_name = name + &amp;#39;.jpg&amp;#39;</span><br><span class="line"></span><br><span class="line">    print(&amp;#39;开始保存图片&amp;#39;)</span><br><span class="line"></span><br><span class="line">    f = open(file\_name, &amp;#39;ab&amp;#39;)</span><br><span class="line"></span><br><span class="line">    f.write(img.content)</span><br><span class="line"></span><br><span class="line">    print(file\_name, &amp;#39;图片保存成功！&amp;#39;)</span><br><span class="line"></span><br><span class="line">    f.close()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>有没有发现这里的正则表达式又有不同?</p>
+</blockquote>
+<blockquote>
+<p>这里的正则表达式后面多了一个 [0] ,这样就是为了避免它匹配符合条件的所有，[0]就是匹配到符合要求</p>
+</blockquote>
+<blockquote>
+<p>的第一部分，[1]就是符合要求的第二部分，以此类推就像数组一样。</p>
+</blockquote>
+<h4 id="6-完整代码"><a href="#6-完整代码" class="headerlink" title="6.完整代码"></a>6.完整代码</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">import requests #导入requests库</span><br><span class="line"></span><br><span class="line">import re #写正则表达式要导入的</span><br><span class="line"></span><br><span class="line">import os</span><br><span class="line"></span><br><span class="line">headers = &#123;&amp;#39;User-Agent&amp;#39;: &amp;#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&amp;#39;&#125;  #给请求指定一个请求头来模拟chrome浏览器</span><br><span class="line"></span><br><span class="line">res = requests.get(&amp;#39;https://unsplash.com&amp;#39;) #像目标url地址发送get请求，返回一个response对象</span><br><span class="line"></span><br><span class="line">print(res.text) #r.text是http response的网页HTML</span><br><span class="line"></span><br><span class="line">res.encoding=&amp;#39;utf-8&amp;#39; #把获取到的源代码格式改为utf-8，避免汉子乱码</span><br><span class="line"></span><br><span class="line">html=res.text</span><br><span class="line"></span><br><span class="line">chapter\_photo\_list=re.findall(r&amp;#39;&amp;lt;img itemprop=&amp;quot;thumbnailUrl&amp;quot;.\*?srcset=&amp;quot;(.\*?)100w,&amp;#39;,html)</span><br><span class="line"></span><br><span class="line">print(chapter\_photo\_list)</span><br><span class="line"></span><br><span class="line">#os.mkdir(&amp;#39;D:\BeautifulPicture&amp;#39;)  #创建文件夹</span><br><span class="line"></span><br><span class="line">os.chdir(&amp;#39;D:\BeautifulPicture&amp;#39;)   #切换路径至上面创建的文件夹</span><br><span class="line"></span><br><span class="line">for chapter\_photo in chapter\_photo\_list:</span><br><span class="line"></span><br><span class="line">    print(chapter\_photo)</span><br><span class="line"></span><br><span class="line">    url=chapter\_photo</span><br><span class="line"></span><br><span class="line">    name=re.findall(r&amp;#39;photo-(.\*?)-&amp;#39;,chapter\_photo)[0]</span><br><span class="line"></span><br><span class="line">    print(name)</span><br><span class="line"></span><br><span class="line">    img = requests.get(url)</span><br><span class="line"></span><br><span class="line">    file\_name = name + &amp;#39;.jpg&amp;#39;</span><br><span class="line"></span><br><span class="line">    print(&amp;#39;开始保存图片&amp;#39;)</span><br><span class="line"></span><br><span class="line">    f = open(file\_name, &amp;#39;ab&amp;#39;)</span><br><span class="line"></span><br><span class="line">    f.write(img.content)</span><br><span class="line"></span><br><span class="line">    print(file\_name, &amp;#39;图片保存成功！&amp;#39;)</span><br><span class="line"></span><br><span class="line">    f.close()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>应注意创建文件夹时应注意是否存在此文件夹，如果此文件夹存在应注释掉对应语句或删除文件夹或改创建路径。</p>
+</blockquote>
+<blockquote>
+<p>看看运行结果</p>
+</blockquote>
+<blockquote>
+<p>运行完你会发现只有十张图片，这是因为这个网站是下拉式的它没有页数。如果感兴趣可以继续学习怎么用代码实现下拉动作，或找有页数的图片网下载全网图片。谢谢观看！</p>
+</blockquote>
 
-选择下载python3.6版本（根据自己电脑系统下载32位或64位）进行安装。
-</code></pre><h4 id="2-用anaconda安装requests模块"><a href="#2-用anaconda安装requests模块" class="headerlink" title="     2.用anaconda安装requests模块"></a><strong>    </strong> 2.用anaconda安装requests模块</h4><pre><code>以管理员身份运行anaconda（我也不知道为什么要用管理员身份运行，好像是以为之前安装别的东西没用管理员运行总
-
-是安装出错）
-
-不管了，就用管理员安装。在anaconda中输入：conda install requests 进行安装
-
-由于我安装过了就不安装了，输入：y 就会继续安装了。安装完成可以输入：conda list 查看
-
-在其中就可以找到requests，requests安装完成。
-</code></pre><h4 id="3-安装PyCharm编辑器"><a href="#3-安装PyCharm编辑器" class="headerlink" title="    3.安装PyCharm编辑器"></a><strong>   </strong> 3.安装PyCharm编辑器</h4><pre><code>在https://www.jetbrains.com/pycharm/中进行下载并安装。在安装完PyCharm后一定要记得配置，如果电脑中有多
-
-个python版本一定要配置为你安装的anaconda路径中的python.exe,否则安装的requests模块会导入不了。
-</code></pre><h4 id="4-PyCharm的配置"><a href="#4-PyCharm的配置" class="headerlink" title="4.PyCharm的配置"></a>4.PyCharm的配置</h4><pre><code>打开PyCharm 点File -&amp;gt; settings
-
-按截图点击进入
-
-进入此页面后点击Proje:Python -&amp;gt;Project Interpreter在右边选择anaconda安装路径中的Python.exe,
-
-再点击右下角OKPyCharm配置完成。
-</code></pre><h2 id="三、代码部分"><a href="#三、代码部分" class="headerlink" title="三、代码部分"></a><strong>三、代码部分</strong></h2><pre><code>1.requests模块的使用
-
-    用requests模块向网页发送get请求，在此之前先介绍一下今天要爬取的网站&amp;quot;http://unsplash.com
-</code></pre><p>import requests #导入requests库</p>
-<p>headers = {&#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&#39;}  #给请求指定一个请求头来模拟chrome浏览器</p>
-<p>res = requests.get(&#39;<a href="https://unsplash.com&#39;" target="_blank" rel="noopener">https://unsplash.com&#39;</a>) #像目标url地址发送get请求，返回一个response对象</p>
-<p>print(res.text) #r.text是http response的网页HTML</p>
-<pre><code>    这样就可以输出网页源代码，输出结果为
-
-    第一步完成，有没有一丝丝成就感？
-
-2.分析网页源代码
-
-    在浏览器中打开http://unsplash.com网站按F12再点图中的选择元素（建议用谷歌浏览器，我发现IE浏览
-
-    器查找到的元素对应源码和PyCharm获取到的有一些差别）
-
-    再在网页中点击一张图片
-
-    点击后此元素的源码部分就找到了，这个图片的网络地址就是下图中蓝色的部分
-
-    你可以对比多个图片元素的网络地址，接下来考虑考虑怎么用python代码把这些网络地址一一摘出来。
-
-3.用正则表达式摘出图片网络地址
-
-    写到此处我突然发现很难受，这个网页的源代码和我前几天写的时候有一点变动我之前写的正则表达式不
-
-    能用了，下来就说说正则表达式的用法吧，你在学习的时候再临时分析正好加深学习。
-
-    先找几个元素代码对比一下
-</code></pre><p>&lt;img itemprop=&quot;thumbnailUrl&quot; data-test=&quot;standard-photo-grid-multi-col-img&quot; sizes=&quot;(min-width: 1335px) 416px,(min-width: 992px) calc(calc(100vw - 72px) / 3), (min-width: 768px) calc(calc(100vw - 48px) / 2), 100vw&quot; srcset=&quot;<a href="https://images.unsplash.com/photo-1521780372272-bb5e0f455dcf?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=ca8871f351fa47ea3f969912a157b235&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=60" target="_blank" rel="noopener">https://images.unsplash.com/photo-1521780372272-bb5e0f455dcf?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=ca8871f351fa47ea3f969912a157b235&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=60</a> 100w,</p>
-<p>&lt;img itemprop=&quot;thumbnailUrl&quot; data-test=&quot;standard-photo-grid-multi-col-img&quot; sizes=&quot;(min-width: 1335px) 416px, (min-width: 992px) calc(calc(100vw - 72px) / 3), (min-width: 768px) calc(calc(100vw - 48px) / 2), 100vw&quot; srcset=&quot;<a href="https://images.unsplash.com/photo-1523768817242-39ab4249a6d5?ixlib=rb-0.3.5&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;s=14e85dfb408586029279636308bca290&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=100&amp;amp;q=60" target="_blank" rel="noopener">https://images.unsplash.com/photo-1523768817242-39ab4249a6d5?ixlib=rb-0.3.5&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;s=14e85dfb408586029279636308bca290&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=100&amp;amp;q=60</a> 100w,</p>
-<p>&lt;img itemprop=&quot;thumbnailUrl&quot; alt=&quot;Walt Disney Concert Hall at dusk&quot; data-test=&quot;standard-photo-grid-multi-col-img&quot; sizes=&quot;(min-width: 1335px) 416px, (min-width: 992px) calc(calc(100vw - 72px) / 3), (min-width: 768px) calc(calc(100vw - 48px) / 2), 100vw&quot; srcset=&quot;<a href="https://images.unsplash.com/photo-1496277397776-ca8089ecc5b7?ixlib=rb-0.3.5&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;s=8788c40854a2dece7b70927c31806802&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=100&amp;amp;q=60" target="_blank" rel="noopener">https://images.unsplash.com/photo-1496277397776-ca8089ecc5b7?ixlib=rb-0.3.5&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;s=8788c40854a2dece7b70927c31806802&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=100&amp;amp;q=60</a> 100w,</p>
-<pre><code>这些就是我们需要的部分html代码，怎么用正则表达式从所有html源码中获取这些片段呢
-</code></pre><p>chapter_photo_list=re.findall(r&#39;&lt;img itemprop=&quot;thumbnailUrl&quot;.*?100w,&#39;,html)</p>
-<pre><code> 从图中可以看出就这一句正则表达式就可以摘出这些片段下来解释解释正则表达式。
-
- 上面那句正则表达式中单引号里带下划线的就是我们要补充的，后面的html就对应的是上面的网页源代码。
-
-这句中的 .\*? 你可以理解为此处略去n个字，这句正则表达式的意思就是在html中匹配出所有以&amp;#39;&amp;lt;img         itemprop=&amp;quot;thumbnilUrl&amp;quot;&amp;#39;开头以 &amp;#39;100w&amp;#39; 结尾的片段。
-
- 事实上现在获取到的片段有一部分是多余的，我们真正需要的只有 srcset=&amp;quot;后面的Url 也就是上图中蓝色
-
- 的链接。
-
- 下来更改正则表达式
-</code></pre><p>chapter_photo_list=re.findall(r&#39;&lt;img itemprop=&quot;thumbnailUrl&quot;.*?srcset=&quot;(.*?)100w,&#39;,html)</p>
-<pre><code>看看运行结果
-
-成功了现在只剩下图片地址了。和之前的正则表达式比较比较有什么不同？
-
-中间多了 srcset=&amp;quot;(.\*?) 大家需要了解的就是（.\*?）它就代表获取 srcset=&amp;quot;与  100w之间的部分
-
-有人会想为什么不直接写
-</code></pre><p>chapter_photo_list=re.findall(r&#39;srcset=&quot;(.*?)100w,&#39;,html)</p>
-<pre><code>而要写成那样？
-
-因为这个网页源代码中不是只有图片Url的时候才有，如果你那样写会获取到好多没有的，所以前面那部
-
-分必须有它起到了定位的作用。
-
-在这里再展示一下以上代码
-</code></pre><p>import requests #导入requests库</p>
-<p>import re #写正则表达式要导入的</p>
-<p>headers = {&#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&#39;}  #给请求指定一个请求头来模拟chrome浏览器</p>
-<p>res = requests.get(&#39;<a href="https://unsplash.com&#39;" target="_blank" rel="noopener">https://unsplash.com&#39;</a>) #像目标url地址发送get请求，返回一个response对象</p>
-<p>print(res.text) #r.text是http response的网页HTML</p>
-<p>res.encoding=&#39;utf-8&#39; #把获取到的源代码格式改为utf-8，避免汉子乱码</p>
-<p>html=res.text</p>
-<p>chapter_photo_list=re.findall(r&#39;&lt;img itemprop=&quot;thumbnailUrl&quot;.*?srcset=&quot;(.*?)100w,&#39;,html)</p>
-<p>print(chapter_photo_list)</p>
-<pre><code>4.创建文件夹并切换路径
-</code></pre><p>os.mkdir(&#39;D:\BeautifulPicture&#39;)  #创建文件夹</p>
-<p>os.chdir(&#39;D:\BeautifulPicture&#39;)   #切换路径至上面创建的文件夹</p>
-<pre><code>    在写这两句代码之前要先导入os，就是在开头写import os 你也可以在下面的代码中看到。
-
-5.下载图片
-</code></pre><p>for chapter_photo in chapter_photo_list:  #从图片列表中循环取出每一个图片网络地址</p>
-<pre><code>print(chapter\_photo)
-
-url=chapter\_photo
-
-name=re.findall(r&amp;#39;photo-(.\*?)-&amp;#39;,chapter\_photo)[0] #用正则表达式在网络地址中匹配出一段作为jpg文件的命名
-
-print(name)
-
-img = requests.get(url)
-
-file\_name = name + &amp;#39;.jpg&amp;#39;
-
-print(&amp;#39;开始保存图片&amp;#39;)
-
-f = open(file\_name, &amp;#39;ab&amp;#39;)
-
-f.write(img.content)
-
-print(file\_name, &amp;#39;图片保存成功！&amp;#39;)
-
-f.close()
-
-    有没有发现这里的正则表达式又有不同?
-
-    这里的正则表达式后面多了一个 [0] ,这样就是为了避免它匹配符合条件的所有，[0]就是匹配到符合要求
-
-    的第一部分，[1]就是符合要求的第二部分，以此类推就像数组一样。
-
-6.完整代码
-</code></pre><p>import requests #导入requests库</p>
-<p>import re #写正则表达式要导入的</p>
-<p>import os</p>
-<p>headers = {&#39;User-Agent&#39;: &#39;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36&#39;}  #给请求指定一个请求头来模拟chrome浏览器</p>
-<p>res = requests.get(&#39;<a href="https://unsplash.com&#39;" target="_blank" rel="noopener">https://unsplash.com&#39;</a>) #像目标url地址发送get请求，返回一个response对象</p>
-<p>print(res.text) #r.text是http response的网页HTML</p>
-<p>res.encoding=&#39;utf-8&#39; #把获取到的源代码格式改为utf-8，避免汉子乱码</p>
-<p>html=res.text</p>
-<p>chapter_photo_list=re.findall(r&#39;&lt;img itemprop=&quot;thumbnailUrl&quot;.*?srcset=&quot;(.*?)100w,&#39;,html)</p>
-<p>print(chapter_photo_list)</p>
-<p>#os.mkdir(&#39;D:\BeautifulPicture&#39;)  #创建文件夹</p>
-<p>os.chdir(&#39;D:\BeautifulPicture&#39;)   #切换路径至上面创建的文件夹</p>
-<p>for chapter_photo in chapter_photo_list:</p>
-<pre><code>print(chapter\_photo)
-
-url=chapter\_photo
-
-name=re.findall(r&amp;#39;photo-(.\*?)-&amp;#39;,chapter\_photo)[0]
-
-print(name)
-
-img = requests.get(url)
-
-file\_name = name + &amp;#39;.jpg&amp;#39;
-
-print(&amp;#39;开始保存图片&amp;#39;)
-
-f = open(file\_name, &amp;#39;ab&amp;#39;)
-
-f.write(img.content)
-
-print(file\_name, &amp;#39;图片保存成功！&amp;#39;)
-
-f.close()
-
-    应注意创建文件夹时应注意是否存在此文件夹，如果此文件夹存在应注释掉对应语句或删除文件夹或改创
-
-    建路径。
-
-    看看运行结果
-
-
-
-    运行完你会发现只有十张图片，这是因为这个网站是下拉式的它没有页数。如果感兴趣可以继续学习怎么
-
-    用代码实现下拉动作，或找有页数的图片网下载全网图片。谢谢观看！
-</code></pre>
             </div>
 
             <!-- Post Comments -->
